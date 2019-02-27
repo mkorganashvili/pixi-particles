@@ -816,6 +816,7 @@ export default class Emitter
 	 */
 	public playOnce(callback?: () => void)
 	{
+		this.autoUpdate = true;
 		this.emit = true;
 		this._completeCallback = callback;
 	}
